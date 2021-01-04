@@ -37,6 +37,7 @@ func showTable() {
 
 func play() {
 	fmt.Println("What position do you want to play?")
+	fmt.Println(played)
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter position(1-9): ")
 	text, _ := reader.ReadString('\n')
@@ -115,7 +116,7 @@ func computerPlays() {
 		}
 	}
 	pos[bestMove] = 1
-	played = append(played, bestMove)
+	played = append(played, bestMove+1)
 	plays++
 }
 
