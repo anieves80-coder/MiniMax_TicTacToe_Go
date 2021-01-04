@@ -120,7 +120,7 @@ func computerPlays() {
 }
 
 // Uses the minimax algorithm with a recursive function and returns
-// a score for every posible move.
+// a score for every possible move.
 func minimax(grid []int, depth int, isMax bool) int {
 
 	res := verifyWin(grid, depth)
